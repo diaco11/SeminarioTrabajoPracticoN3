@@ -26,9 +26,9 @@ public class Login extends javax.swing.JFrame {
     public void validar() {
     String correo = txtCorreo.getText();
     String pass = String.valueOf(txtPass.getPassword());
-    if (!"".equals(correo) && !"".equals(pass)) {  // Cambié || a && porque ambos deben estar completos
+    if (!"".equals(correo) && !"".equals(pass)) {  
         lg = login.log(correo, pass);
-        if (lg.getCorreo() != null && lg.getPass() != null) {  // Verificamos si la autenticación fue exitosa
+        if (lg.getCorreo() != null && lg.getPass() != null) {
             Sistema sis = new Sistema();
             sis.setVisible(true);  // Muestra el sistema
             dispose();  // Cierra la ventana de Login
