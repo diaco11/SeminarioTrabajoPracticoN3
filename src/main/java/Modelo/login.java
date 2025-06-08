@@ -4,20 +4,24 @@
  */
 package Modelo;
 /**
- * TRABAJO PRACTICO N°1
+ * TRABAJO PRACTICO N°3
  * ALUMNO: CRISTIAN DAVID DIACO
  * MATERIA: SEMINARIO PRACTICA INFORMATICA
  * 
+ * MODULO LOGIN
  */
+
 public class login {
     private int id;
     private String nombre;
     private String correo;
     private String pass;
 
+    // CONSTRUCTOR VACIO
     public login() {
     }
 
+    // CONSTRUCTOR
     public login(int id, String nombre, String correo, String pass) {
         this.id = id;
         this.nombre = nombre;
@@ -25,6 +29,7 @@ public class login {
         this.pass = pass;
     }
 
+    // METODOS GETTERS Y SETTERS
     public int getId() {
         return id;
     }

@@ -4,10 +4,11 @@
  */
 package Modelo;
 /**
- * TRABAJO PRACTICO N°1
+ * TRABAJO PRACTICO N°3
  * ALUMNO: CRISTIAN DAVID DIACO
  * MATERIA: SEMINARIO PRACTICA INFORMATICA
  * 
+ * MODULO LOGIN PERSISTENCIA
  */
 
 import java.sql.Connection;
@@ -21,6 +22,7 @@ public class LoginDAO {
     ResultSet rs;
     Conexion cn = new Conexion();
     
+    // METODO ACCESO A BASE DE DATOS
     public login log(String correo, String pass){
         login l = new login();
         String sql = "SELECT * FROM usuario WHERE correo = ? AND pass = ?";
